@@ -1,234 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-</head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50 transition-all duration-300" id="navbar">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div class="py-4">
-                        <span class="font-semibold text-gray-700 text-lg">I am shahin...</span>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-8">
-                    <a href="#about" class="nav-link text-blue-900 hover:text-gray-900">About</a>
-                    <a href="#portfolio" class="nav-link text-gray-600 hover:text-gray-900">Makes</a>
-                    <a href="#contact" class="nav-link text-gray-600 hover:text-gray-900">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-`
-    <!-- Hero Section -->
-    <div class="bg-gradient-to-r from-blue-900 to-white-100 text-white pt-48 pb-32">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <img src="C:\Users\jedma\OneDrive\Pictures\Camera Roll\shahin PP 1.jpeg" class="rounded-full mx-auto mb-8 border-4 border-white w-70 h-80 object-cover hover:scale-105 transition-transform duration-100">
-            <h1 class="text-4xl font-bold mb-5">SHAHIN KK</h1>
-            <p class="text-xl mb-8"><span id="typing-text"></span></p>
-            <button class="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-gray-100 transition transform hover:scale-105 duration-300">Get in Touch</button>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">About Me</h2>
-            <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    My Name is Muhammed Shahin KK and iam a Proffesional Accountant with a Passionated skill of Photography and Coding 
-                </p>
-                <div class="grid grid-cols-2 gap-4 mt-8">
-                    <div class="bg-gray-50 p-4 rounded skill-card" data-aos="fade-right">
-                        <h3 class="font-semibold mb-2">Skills</h3>
-                        <div class="space-y-2">
-                            <div class="skill-bar">
-                                <div class="text-sm mb-1">Accounting</div>
-                                <div class="bg-gray-200 rounded-full h-2">
-                                    <div class="bg-blue-600 rounded-full h-2 w-0 transition-all duration-1000"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="text-sm mb-1">Photography</div>
-                                <div class="bg-gray-200 rounded-full h-2">
-                                    <div class="bg-blue-600 rounded-full h-2 w-0 transition-all duration-1000"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="text-sm mb-1">Coding</div>
-                                <div class="bg-gray-200 rounded-full h-2">
-                                    <div class="bg-blue-600 rounded-full h-2 w-0 transition-all duration-1000"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded" data-aos="fade-left">
-                        <h3 class="font-semibold mb-2">Experience</h3>
-                        <div id="experience-counter" class="text-3xl font-bold text-blue-600">0</div>
-                        <p class="text-gray-600">years of experience</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-gray-100 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">My Portfolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Items -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                    <div class="relative group">
-                        <img src="What-is-marketing.webp" alt="Project 1" class="w-full transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <button class="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition">View Project</button>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Project 1</h3>
-                        <p class="text-gray-600">My first project was i just did when i was in my Graduation periode, and its based on Online Shoping Markets and its reliabilty..</p>
-                    </div>
-                </div>
-                <!-- Add more portfolio items similarly -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Get in Touch</h2>
-            <div class="bg-white rounded-lg shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
-                <form id="contact-form" class="space-y-6">
-                    <div>
-                        <label class="block text-gray-700 mb-2">Name</label>
-                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300">
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Message</label>
-                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 transition-colors duration-300" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition transform hover:scale-105 duration-300">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2025 Muhmaad Shahin KK. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-        // Typing effect
-        new Typed('#typing-text', {
-            strings: ['Accountant', 'Photographer', 'Web Developer', 'Creative Professional'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            loop: true
-        });
-
-        // Navbar scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll <= 0) {
-                navbar.classList.remove('shadow-lg');
-            } else {
-                navbar.classList.add('shadow-lg');
-            }
-
-            if (currentScroll > lastScroll && currentScroll > 100) {
-                navbar.style.transform = 'translateY(-100%)';
-            } else {
-                navbar.style.transform = 'translateY(0)';
-            }
-            lastScroll = currentScroll;
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-                const targetSection = document.querySelector(targetId);
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        // Animate skill bars when in view
-        const observerCallback = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.querySelector('.bg-blue-600').style.width = '85%';
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback);
-        document.querySelectorAll('.skill-bar').forEach(bar => observer.observe(bar));
-
-        // Experience counter animation
-        function animateCounter(element, target, duration) {
-            let start = 0;
-            const increment = target / (duration / 16);
-            const timer = setInterval(() => {
-                start += increment;
-                element.textContent = Math.floor(start);
-                if (start >= target) {
-                    element.textContent = target;
-                    clearInterval(timer);
-                }
-            }, 16);
-        }
-
-        const experienceCounter = document.getElementById('experience-counter');
-        const experienceObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(experienceCounter, 5, 1500); // Change 5 to your years of experience
-                    experienceObserver.unobserve(entry.target);
-                }
-            });
-        });
-        experienceObserver.observe(experienceCounter);
-
-        // Form submission handling
-        document.getElementById('contact-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Add your form submission logic here
-            const button = e.target.querySelector('button');
-            button.textContent = 'Message Sent!';
-            button.classList.add('bg-green-600');
-            setTimeout(() => {
-                button.textContent = 'Send Message';
-                button.classList.remove('bg-green-600');
-                e.target.reset();
-            }, 3000);
-        });
-    </script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accounting</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f9fafb;--panel:#fff;--ink:#212529;--muted:#6c757d;--line:#dee2e6;--pri:#714b67;--prih:#5f3e56;--nav:#714b67;--link:#017e84;--sel:#f3ecf1;--ok:#198754;--bad:#dc3545;--warn:#e8890c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a1f;--panel:#25232b;--ink:#e8e6ec;--muted:#a09cab;--line:#3a3743;--pri:#9a6a8d;--prih:#b17fa3;--nav:#4a3344;--link:#4cc3c9;--sel:#332c37;--ok:#4cc58a;--bad:#ff7d8a;--warn:#f0a94b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1a1f;--panel:#25232b;--ink:#e8e6ec;--muted:#a09cab;--line:#3a3743;--pri:#9a6a8d;--prih:#b17fa3;--nav:#4a3344;--link:#4cc3c9;--sel:#332c37;--ok:#4cc58a;--bad:#ff7d8a;--warn:#f0a94b;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Roboto,system-ui,sans-serif}
+#nav{background:var(--nav);color:#fff;display:flex;align-items:center;height:46px;padding:0 10px;gap:2px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;overflow:visible}
+.brand{font-weight:500;font-size:15px;margin:0 14px 0 4px;display:flex;align-items:center;gap:8px}.brand i{font-style:normal;font-size:18px}
+.dd{position:relative}.dd>button,.dd>a{background:none;border:0;color:#fff;font:inherit;padding:0 12px;height:46px;cursor:pointer;opacity:.85}
+.dd>button:hover,.dd.on>button{background:rgba(255,255,255,.12);opacity:1}
+.dm{display:none;position:absolute;left:0;top:46px;min-width:190px;background:var(--panel);color:var(--ink);border:1px solid var(--line);box-shadow:0 6px 16px rgba(0,0,0,.18);padding:4px 0}
+.dd:hover .dm,.dd:focus-within .dm{display:block}.dm a{display:block;padding:8px 16px;cursor:pointer}.dm a:hover{background:var(--sel)}
+.av{margin-left:auto;width:28px;height:28px;border-radius:50%;background:#fff;color:var(--pri);display:grid;place-items:center;font-weight:700}
+.cp{background:var(--panel);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.bc{font-size:18px;display:flex;gap:6px;align-items:center}.bc a{color:var(--link);cursor:pointer}.bc span{color:var(--muted)}
+.search{flex:1;min-width:200px;max-width:420px;display:flex;border:1px solid var(--line);border-radius:4px;background:var(--bg)}
+.search input{flex:1;border:0;background:none;padding:6px 10px;color:var(--ink);font:inherit;min-width:0}.search select{border:0;border-left:1px solid var(--line);background:none;color:var(--ink);font:inherit;padding:0 6px}
+.btn{background:var(--pri);color:#fff;border:1px solid var(--pri);border-radius:4px;padding:6px 12px;font:500 14px Roboto,sans-serif;cursor:pointer}.btn:hover{background:var(--prih)}
+.btn.s{background:var(--panel);color:var(--ink);border-color:var(--line)}.btn.s:hover{background:var(--sel)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--link);outline-offset:1px}
+main{padding:16px;max-width:1280px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px;display:flex;flex-direction:column}
+.ch{padding:10px 14px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line)}.ch b{font-size:15px;font-weight:500}.ch small{color:var(--muted)}
+.cb{padding:12px 14px;display:flex;gap:14px;justify-content:space-between;align-items:stretch;flex:1}
+.lk{display:flex;flex-direction:column;gap:5px;align-items:flex-start;min-width:0}
+.lk a{color:var(--link);cursor:pointer;display:flex;gap:14px;justify-content:space-between;width:100%;font-variant-numeric:tabular-nums}.lk a:hover{text-decoration:underline}
+.bars{display:flex;gap:8px;align-items:flex-end;height:78px;padding-top:6px}.bars div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;font-size:11px;color:var(--muted);height:100%;width:46px}.bars i{display:block;width:26px;background:var(--pri);border-radius:2px 2px 0 0;min-height:3px;opacity:.85}.bars i.l{background:var(--bad)}
+.big{font-size:22px;font-weight:500;font-variant-numeric:tabular-nums}
+.sec{margin:18px 0 8px;font-size:15px;font-weight:500}
+.sheet{background:var(--panel);border:1px solid var(--line);border-radius:4px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{padding:7px 12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font-weight:500;color:var(--ink);background:var(--bg);font-size:13px}td.n,th.n{text-align:right}
+tbody tr.row{cursor:pointer}tbody tr.row:hover{background:var(--sel)}tr.t td{font-weight:500;background:var(--bg)}
+.bd{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;font-weight:500;background:var(--line);color:var(--ink)}
+.bd.p{background:rgba(232,137,12,.18);color:var(--warn)}.bd.g{background:rgba(25,135,84,.18);color:var(--ok)}.bd.d{background:var(--line);color:var(--muted)}
+.late{color:var(--bad)}.pos{color:var(--ok)}.neg{color:var(--bad)}
+.sb{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:var(--panel);border-bottom:1px solid var(--line);gap:8px;flex-wrap:wrap}
+.st{display:flex}.st span{padding:4px 16px 4px 22px;background:var(--line);color:var(--muted);font-size:13px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,0 100%,10px 50%);margin-left:-6px}.st span.on{background:var(--pri);color:#fff}
+.form{background:var(--panel);border:1px solid var(--line);border-radius:4px;margin:16px;padding:20px;position:relative;overflow:hidden}
+.form h1{margin:0 0 16px;font-size:26px;font-weight:500}
+.f2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 36px;margin-bottom:16px}
+.fl{display:grid;grid-template-columns:110px 1fr;align-items:center;gap:6px}.fl label{font-weight:500}
+input,select{font:inherit;color:var(--ink);background:var(--panel);border:0;border-bottom:1px solid var(--line);padding:4px 2px;min-width:0;width:100%}input:disabled,select:disabled{border-color:transparent;background:none;opacity:1;-webkit-text-fill-color:var(--ink)}
+.tabs{border-bottom:1px solid var(--line);display:flex;gap:2px;margin-bottom:8px}.tabs a{padding:8px 14px;cursor:pointer;border-bottom:2px solid transparent;color:var(--muted)}.tabs a.on{color:var(--ink);border-color:var(--pri);font-weight:500}
+.tot{margin-left:auto;width:min(300px,100%);margin-top:12px}.tot div{display:flex;justify-content:space-between;padding:4px 0}.tot .g{font-weight:700;border-top:1px solid var(--ink);margin-top:4px;padding-top:6px}
+.ribbon{position:absolute;top:22px;right:-38px;transform:rotate(45deg);background:var(--ok);color:#fff;padding:4px 44px;font-weight:700;letter-spacing:.5px}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+@media(max-width:700px){#nav .dd>button{padding:0 8px}.brand span{display:none}}
+</style></head><body>
+<div id="nav"></div><div id="cp"></div><div id="main"></div>
+<script>
+const CUR='SAR',MENU=[['Customers',[['Invoices','list-out']]],['Vendors',[['Bills','list-in']]],['Accounting',[['Journal Entries','je']]],['Reporting',[['Trial Balance','tb'],['Profit & Loss','pl'],['Balance Sheet','bs']]],['Configuration',[['Chart of Accounts','coa']]]];
+const TY={asset:'Current Assets',liability:'Payables',equity:'Equity',income:'Income',expense:'Expenses'};
+let S,r='dash',q='',flt='all',tab='lines',jl=[{},{}];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>(Math.round(n*100)/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const T=()=>new Date().toISOString().slice(0,10);
+const D=n=>{const d=new Date();d.setDate(d.getDate()+n);return d.toISOString().slice(0,10)};
+const money=n=>CUR+' '+fmt(n);
+function save(){try{localStorage.setItem('acct2',JSON.stringify(S))}catch(e){}}
+function totals(i){let u=0,t=0;i.lines.forEach(l=>{const s=(+l.qty||0)*(+l.price||0);u+=s;t+=s*(+l.tax||0)});return{u,t,tot:u+t}}
+function je(date,ref,jr,memo,lines){S.entries.push({date,ref,jr,memo,lines:lines.filter(l=>l.debit||l.credit)})}
+function mk(t,partner,date,due,lines){const i={id:S.nid++,type:t,partner,date,due,lines,state:'draft',paid:false,num:''};S.invoices.push(i);return i}
+function confirmInv(i){
+ const{u,t,tot}=totals(i);S.seq[i.type]++;
+ if(!i.num)i.num=(i.type==='out'?'INV/':'BILL/')+i.date.slice(0,4)+'/'+String(S.seq[i.type]).padStart(4,'0');
+ i.state='posted';
+ if(i.type==='out')je(i.date,i.num,'INV','Customer Invoice',[{acc:'1200',debit:tot,credit:0},{acc:'4000',debit:0,credit:u},{acc:'2200',debit:0,credit:t}]);
+ else je(i.date,i.num,'BILL','Vendor Bill',[{acc:'5000',debit:u,credit:0},{acc:'1400',debit:t,credit:0},{acc:'2100',debit:0,credit:tot}]);
+}
+function payInv(i){const tot=totals(i).tot;i.paid=true;i.paidOn=T();
+ if(i.type==='out')je(T(),'PAY/'+i.num,'BNK','Payment from '+i.partner,[{acc:'1000',debit:tot,credit:0},{acc:'1200',debit:0,credit:tot}]);
+ else je(T(),'PAY/'+i.num,'BNK','Payment to '+i.partner,[{acc:'2100',debit:tot,credit:0},{acc:'1000',debit:0,credit:tot}]);}
+function init(){
+ try{S=JSON.parse(localStorage.getItem('acct2'))}catch(e){S=null}
+ if(S)return;
+ S={nid:1,seq:{out:0,in:0},entries:[],invoices:[],accounts:[['1000','Bank','asset'],['1200','Accounts Receivable','asset'],['1400','Tax Receivable','asset'],['2100','Accounts Payable','liability'],['2200','Tax Payable','liability'],['3000','Capital','equity'],['4000','Product Sales','income'],['5000','Expenses','expense'],['5100','Cost of Goods Sold','expense']].map(a=>({code:a[0],name:a[1],type:a[2]}))};
+ je(D(-60),'OPEN','MISC','Opening balance',[{acc:'1000',debit:80000,credit:0},{acc:'3000',debit:0,credit:80000}]);
+ const L=(d,p,q_)=>[{desc:d,qty:q_,price:p,tax:0.15}];
+ let i=mk('out','Azure Interior',D(-40),D(-10),L('Office design',3,2500));confirmInv(i);payInv(i);
+ i=mk('out','Deco Addict',D(-25),D(-5),L('Consulting hours',20,350));confirmInv(i);
+ i=mk('out','Gemini Furniture',D(-6),D(24),L('Annual support plan',1,9000));confirmInv(i);
+ i=mk('out','Lumber Inc',D(-1),D(29),L('Implementation',5,1200));
+ i=mk('in','Wood Corner',D(-30),D(-2),L('Material supplies',10,420));confirmInv(i);
+ i=mk('in','Cloud Hosting Ltd',D(-3),D(27),L('Server hosting',1,1750));confirmInv(i);
+ save();
+}
+const A=c=>S.accounts.find(a=>a.code===c);
+function bal(c){let d=0,k=0;S.entries.forEach(e=>e.lines.forEach(l=>{if(l.acc===c){d+=+l.debit||0;k+=+l.credit||0}}));return d-k}
+const net=a=>{const b=bal(a.code);return(a.type==='asset'||a.type==='expense')?b:-b};
+const sum=t=>S.accounts.filter(a=>a.type===t).reduce((s,a)=>s+net(a),0);
+const accName=c=>A(c)?c+' '+A(c).name:c;
+ 
+function go(x,f){r=x;if(f!==undefined)flt=f;q='';tab='lines';window.scrollTo(0,0);render()}
+function render(){
+ $('nav').innerHTML=`<div class="brand"><i>▦</i><span>Accounting</span></div><div class="dd"><a style="display:block;line-height:46px;padding:0 12px;cursor:pointer;color:#fff" onclick="go('dash')">Dashboard</a></div>`+
+ MENU.map(m=>`<div class="dd"><button>${m[0]}</button><div class="dm">${m[1].map(x=>`<a onclick="go('${x[1]}')">${x[0]}</a>`).join('')}</div></div>`).join('')+`<div class="av">A</div>`;
+ const[v,id]=r.split(':');
+ ({dash,'list-out':()=>list('out'),'list-in':()=>list('in'),inv,je:jeView,jenew,coa,tb:()=>rep('tb'),pl:()=>rep('pl'),bs:()=>rep('bs')})[v](id);
+}
+function cp(crumbs,right,mid){
+ $('cp').innerHTML=`<div class="cp"><div class="bc">${crumbs.map((c,i)=>i<crumbs.length-1?`<a onclick="go('${c[1]}')">${c[0]}</a><span>/</span>`:`<b style="font-weight:500">${c[0]}</b>`).join('')}</div>${right||''}${mid||''}</div>`;
+}
+const unpaid=t=>S.invoices.filter(i=>i.type===t&&i.state==='posted'&&!i.paid);
+const sumT=a=>a.reduce((s,i)=>s+totals(i).tot,0);
+function dcard(t,title,sub,btn){
+ const dr=S.invoices.filter(i=>i.type===t&&i.state==='draft'),up=unpaid(t),late=up.filter(i=>i.due<T()),week=up.filter(i=>i.due>=T()&&i.due<=D(7)),nd=up.filter(i=>i.due>D(7));
+ const vals=[sumT(late),sumT(week),sumT(nd)],mx=Math.max(...vals,1);
+ return `<div class="card"><div class="ch"><b>${title}</b><small>${sub}</small></div><div class="cb"><div class="lk"><button class="btn" onclick="newInv('${t}')">${btn}</button>
+ <div style="height:6px"></div><a onclick="go('list-${t}','draft')"><span>${dr.length} To Validate</span><span>${fmt(sumT(dr))}</span></a>
+ <a onclick="go('list-${t}','unpaid')"><span>${up.length} Waiting Payment</span><span>${fmt(sumT(up))}</span></a>
+ <a onclick="go('list-${t}','late')"><span>${late.length} Late</span><span>${fmt(sumT(late))}</span></a></div>
+ <div class="bars">${['Late','Due','Not due'].map((n,k)=>`<div><i class="${k?'':'l'}" style="height:${Math.max(vals[k]/mx*54,3)}px" title="${fmt(vals[k])}"></i>${n}</div>`).join('')}</div></div></div>`;
+}
+function dash(){
+ cp([['Dashboard','dash']]);
+ const rev=sum('income'),ex=sum('expense'),bank=net(A('1000')),misc=S.entries.filter(e=>e.jr==='MISC').length,bnk=S.entries.filter(e=>e.jr==='BNK').length;
+ $('main').innerHTML=`<main><div class="grid">${dcard('out','Customer Invoices','Sales','New Invoice')}${dcard('in','Vendor Bills','Purchases','New Bill')}
+ <div class="card"><div class="ch"><b>Bank</b><small>${CUR}</small></div><div class="cb"><div class="lk"><button class="btn" onclick="go('jenew')">New Transaction</button><div style="height:6px"></div><a onclick="go('je')"><span>${bnk} Bank entries</span></a></div><div style="text-align:right"><div style="color:var(--muted)">Balance</div><div class="big">${fmt(bank)}</div></div></div></div>
+ <div class="card"><div class="ch"><b>Miscellaneous Operations</b><small>General</small></div><div class="cb"><div class="lk"><button class="btn" onclick="go('jenew')">New Entry</button><div style="height:6px"></div><a onclick="go('je')"><span>${misc} Journal entries</span></a></div></div></div></div>
+ <div class="sec">Profit &amp; Loss</div><div class="grid">
+ <div class="card"><div class="cb"><div><div style="color:var(--muted)">Income</div><div class="big pos">${money(rev)}</div></div></div></div>
+ <div class="card"><div class="cb"><div><div style="color:var(--muted)">Expenses</div><div class="big neg">${money(ex)}</div></div></div></div>
+ <div class="card" style="cursor:pointer" onclick="go('pl')"><div class="cb"><div><div style="color:var(--muted)">Net Profit</div><div class="big">${money(rev-ex)}</div></div></div></div></div></main>`;
+}
+function matches(i){
+ const s=q.toLowerCase(),late=i.state==='posted'&&!i.paid&&i.due<T();
+ if(s&&!(i.num+' '+i.partner).toLowerCase().includes(s))return false;
+ return {all:1,draft:i.state==='draft',posted:i.state==='posted',unpaid:i.state==='posted'&&!i.paid,late,paid:i.paid}[flt];
+}
+const badge=i=>i.state==='draft'?'<span class="bd d">Draft</span>':i.paid?'<span class="bd g">Paid</span>':'<span class="bd p">Not Paid</span>';
+function rows(t){
+ const L=S.invoices.filter(i=>i.type===t&&matches(i)).sort((a,b)=>b.id-a.id);
+ if(!L.length)return `<tr><td colspan="7" class="empty">No records match. Create a new one to get started.</td></tr>`;
+ return L.map(i=>{const x=totals(i);return `<tr class="row" onclick="go('inv:${i.id}')"><td>${i.num||'Draft'}</td><td>${esc(i.partner)||'—'}</td><td>${i.date}</td><td class="${i.state==='posted'&&!i.paid&&i.due<T()?'late':''}">${i.due}</td><td class="n">${fmt(x.u)}</td><td class="n">${fmt(x.tot)}</td><td>${badge(i)}</td></tr>`}).join('')+
+ `<tr class="t"><td colspan="4"></td><td class="n">${fmt(L.reduce((s,i)=>s+totals(i).u,0))}</td><td class="n">${fmt(L.reduce((s,i)=>s+totals(i).tot,0))}</td><td></td></tr>`;
+}
+function list(t){
+ const nm=t==='out'?'Invoices':'Bills',F=[['all','All'],['draft','Draft'],['posted','Posted'],['unpaid','Not Paid'],['late','Late'],['paid','Paid']];
+ cp([[nm,'list-'+t]],`<button class="btn" onclick="newInv('${t}')">New</button>`,`<div class="search"><input placeholder="Search ${nm}…" value="${esc(q)}" oninput="q=this.value;$('tb').innerHTML=rows('${t}')"><select onchange="flt=this.value;$('tb').innerHTML=rows('${t}')">${F.map(f=>`<option value="${f[0]}" ${flt===f[0]?'selected':''}>${f[1]}</option>`).join('')}</select></div>`);
+ $('main').innerHTML=`<main><div class="sheet"><table><thead><tr><th>Number</th><th>${t==='out'?'Customer':'Vendor'}</th><th>${t==='out'?'Invoice':'Bill'} Date</th><th>Due Date</th><th class="n">Tax Excluded</th><th class="n">Total</th><th>Status</th></tr></thead><tbody id="tb">${rows(t)}</tbody></table></div></main>`;
+}
+function newInv(t){const i=mk(t,'',T(),D(30),[{desc:'',qty:1,price:0,tax:0.15}]);save();go('inv:'+i.id)}
+const cur=()=>S.invoices.find(i=>i.id==r.split(':')[1]);
+function refreshT(i){const x=totals(i);i.lines.forEach((l,k)=>{const e=$('s'+k);if(e)e.textContent=fmt((+l.qty||0)*(+l.price||0))});
+ $('tt').innerHTML=`<div><span>Untaxed Amount</span><span>${fmt(x.u)}</span></div><div><span>VAT</span><span>${fmt(x.t)}</span></div><div class="g"><span>Total</span><span>${money(x.tot)}</span></div>`;save()}
+function setF(f,v){const i=cur();i[f]=v;save()}
+function setL(k,f,v){const i=cur();i.lines[k][f]=f==='desc'?v:+v;refreshT(i)}
+function addL(){cur().lines.push({desc:'',qty:1,price:0,tax:0.15});render()}
+function delL(k){const i=cur();if(i.lines.length>1)i.lines.splice(k,1);save();render()}
+function act(a){const i=cur();
+ if(a==='ok'){if(!i.partner.trim()||totals(i).tot<=0){alert('Add a '+(i.type==='out'?'customer':'vendor')+' and at least one line with an amount.');return}confirmInv(i)}
+ if(a==='pay')payInv(i);
+ if(a==='draft'){S.entries=S.entries.filter(e=>e.ref!==i.num);i.state='draft'}
+ if(a==='del'){if(!confirm('Delete this draft?'))return;S.invoices=S.invoices.filter(x=>x!==i);save();go('list-'+i.type);return}
+ save();render();
+}
+function inv(){
+ const i=cur();if(!i){go('dash');return}
+ const ro=i.state==='posted',nm=i.type==='out'?'Invoice':'Bill',x=totals(i);
+ cp([[nm+'s','list-'+i.type],[i.num||'New']]);
+ const btns=!ro?`<button class="btn" onclick="act('ok')">Confirm</button><button class="btn s" onclick="act('del')">Delete</button>`:(i.paid?`<button class="btn s" disabled>Paid on ${i.paidOn}</button>`:`<button class="btn" onclick="act('pay')">Register Payment</button><button class="btn s" onclick="act('draft')">Reset to Draft</button>`);
+ const lines=i.lines.map((l,k)=>`<tr><td><input ${ro?'disabled':''} value="${esc(l.desc)}" placeholder="Description" onchange="setL(${k},'desc',this.value)"></td><td><input type="number" ${ro?'disabled':''} value="${l.qty}" style="width:70px" onchange="setL(${k},'qty',this.value)"></td><td><input type="number" ${ro?'disabled':''} value="${l.price}" style="width:100px" onchange="setL(${k},'price',this.value)"></td><td><select ${ro?'disabled':''} onchange="setL(${k},'tax',this.value)"><option value="0.15" ${l.tax==0.15?'selected':''}>VAT 15%</option><option value="0" ${l.tax==0?'selected':''}>No tax</option></select></td><td class="n" id="s${k}">${fmt((+l.qty||0)*(+l.price||0))}</td><td>${ro?'':`<a style="cursor:pointer" onclick="delL(${k})">✕</a>`}</td></tr>`).join('');
+ const items=S.entries.filter(e=>e.ref===i.num||e.ref==='PAY/'+i.num).map(e=>e.lines.map(l=>`<tr><td>${e.ref}</td><td>${esc(accName(l.acc))}</td><td class="n">${l.debit?fmt(l.debit):''}</td><td class="n">${l.credit?fmt(l.credit):''}</td></tr>`).join('')).join('');
+ $('main').innerHTML=`<div class="sb"><div style="display:flex;gap:6px">${btns}</div><div class="st"><span class="${!ro?'on':''}">Draft</span><span class="${ro?'on':''}">Posted</span></div></div>
+ <div class="form">${i.paid?'<div class="ribbon">PAID</div>':''}<h1>${i.num||'Draft '+nm}</h1>
+ <div class="f2"><div><div class="fl"><label>${i.type==='out'?'Customer':'Vendor'}</label><input ${ro?'disabled':''} value="${esc(i.partner)}" placeholder="Name" onchange="setF('partner',this.value)"></div></div>
+ <div><div class="fl"><label>${nm} Date</label><input type="date" ${ro?'disabled':''} value="${i.date}" onchange="setF('date',this.value)"></div><div class="fl"><label>Due Date</label><input type="date" ${ro?'disabled':''} value="${i.due}" onchange="setF('due',this.value)"></div></div></div>
+ <div class="tabs"><a class="${tab==='lines'?'on':''}" onclick="tab='lines';render()">${nm} Lines</a><a class="${tab==='items'?'on':''}" onclick="tab='items';render()">Journal Items</a></div>
+ ${tab==='lines'?`<div style="overflow-x:auto"><table><tr><th>Label</th><th>Quantity</th><th>Price</th><th>Taxes</th><th class="n">Subtotal</th><th></th></tr>${lines}</table></div>${ro?'':'<p><a style="color:var(--link);cursor:pointer" onclick="addL()">Add a line</a></p>'}<div class="tot" id="tt"></div>`:`<div style="overflow-x:auto">${items?`<table><tr><th>Entry</th><th>Account</th><th class="n">Debit</th><th class="n">Credit</th></tr>${items}</table>`:'<div class="empty">Confirm the document to generate journal items.</div>'}</div>`}</div>`;
+ if(tab==='lines')refreshT(i);
+}
+function jeView(){
+ cp([['Journal Entries','je']],`<button class="btn" onclick="go('jenew')">New</button>`);
+ const e=S.entries.slice().reverse();
+ $('main').innerHTML=`<main><div class="sheet"><table><tr><th>Date</th><th>Number</th><th>Journal</th><th>Account</th><th class="n">Debit</th><th class="n">Credit</th><th>Status</th></tr>${e.map(x=>x.lines.map((l,k)=>`<tr><td>${k?'':x.date}</td><td>${k?'':esc(x.ref)}</td><td>${k?'':x.jr}</td><td>${esc(accName(l.acc))}</td><td class="n">${l.debit?fmt(l.debit):''}</td><td class="n">${l.credit?fmt(l.credit):''}</td><td>${k?'':'<span class="bd g">Posted</span>'}</td></tr>`).join('')).join('')}</table></div></main>`;
+}
+function jenew(){
+ const dr=jl.reduce((s,l)=>s+(+l.debit||0),0),cr=jl.reduce((s,l)=>s+(+l.credit||0),0),ok=dr>0&&Math.abs(dr-cr)<.005&&jl.every(l=>!(l.debit||l.credit)||l.acc);
+ cp([['Journal Entries','je'],['New']]);
+ const o=S.accounts.map(a=>`<option value="${a.code}">${esc(a.code+' '+a.name)}</option>`).join('');
+ $('main').innerHTML=`<div class="sb"><div><button class="btn" ${ok?'':'disabled'} onclick="postJ()">Post</button></div><div class="st"><span class="on">Draft</span><span>Posted</span></div></div><div class="form"><h1>New Entry</h1>
+ <div class="f2"><div class="fl"><label>Date</label><input id="jd" type="date" value="${T()}"></div><div class="fl"><label>Reference</label><input id="jm"></div></div>
+ <table><tr><th>Account</th><th>Debit</th><th>Credit</th></tr>${jl.map((l,k)=>`<tr><td><select onchange="jl[${k}].acc=this.value;render()"><option value="">Select account…</option>${o.replace(`value="${l.acc}"`,`value="${l.acc}" selected`)}</select></td><td><input type="number" min="0" step="0.01" value="${l.debit||''}" onchange="jl[${k}].debit=+this.value;jl[${k}].credit=0;render()"></td><td><input type="number" min="0" step="0.01" value="${l.credit||''}" onchange="jl[${k}].credit=+this.value;jl[${k}].debit=0;render()"></td></tr>`).join('')}<tr class="t"><td>Total</td><td>${fmt(dr)}</td><td class="${Math.abs(dr-cr)<.005&&dr>0?'pos':'neg'}">${fmt(cr)}</td></tr></table>
+ <p><a style="color:var(--link);cursor:pointer" onclick="jl.push({});render()">Add a line</a></p>${ok?'':'<p class="late">The total debit must equal the total credit before you can post.</p>'}</div>`;
+}
+function postJ(){je($('jd').value||T(),'MISC/'+String(S.entries.length+1).padStart(4,'0'),'MISC',$('jm').value,jl.map(l=>({acc:l.acc,debit:+l.debit||0,credit:+l.credit||0})));jl=[{},{}];save();go('je')}
+function coa(){
+ cp([['Chart of Accounts','coa']]);
+ $('main').innerHTML=`<main><div class="sheet"><table><tr><th>Code</th><th>Account Name</th><th>Type</th><th class="n">Balance</th></tr>${S.accounts.slice().sort((a,b)=>a.code.localeCompare(b.code)).map(a=>`<tr><td>${esc(a.code)}</td><td>${esc(a.name)}</td><td>${TY[a.type]}</td><td class="n">${fmt(net(a))}</td></tr>`).join('')}</table></div>
+ <div class="form" style="margin:16px 0"><div class="sec" style="margin-top:0">New Account</div><div class="f2"><div class="fl"><label>Code</label><input id="ac" placeholder="e.g. 6000"></div><div class="fl"><label>Name</label><input id="an"></div><div class="fl"><label>Type</label><select id="at">${Object.entries(TY).map(t=>`<option value="${t[0]}">${t[1]}</option>`).join('')}</select></div></div>
+ <button class="btn" onclick="newAcc()">Save</button> <button class="btn s" onclick="if(confirm('Delete all data and reload sample data?')){try{localStorage.removeItem('acct2')}catch(e){}init();go('dash')}">Reset demo data</button></div></main>`;
+}
+function newAcc(){const c=$('ac').value.trim(),n=$('an').value.trim();if(!c||!n){alert('Enter a code and a name.');return}if(A(c)){alert('This code already exists.');return}S.accounts.push({code:c,name:n,type:$('at').value});save();render()}
+function rep(k){
+ const nm={tb:'Trial Balance',pl:'Profit & Loss',bs:'Balance Sheet'}[k];cp([['Reporting','dash'],[nm]]);
+ const ln=a=>`<tr><td>${esc(a.code+' '+a.name)}</td><td class="n">${fmt(net(a))}</td></tr>`,sec=t=>S.accounts.filter(a=>a.type===t).map(ln).join(''),h=s=>`<tr><th>${s}</th><th></th></tr>`,tr=(s,v,c)=>`<tr class="t"><td>${s}</td><td class="n ${c||''}">${fmt(v)}</td></tr>`;
+ let b='';
+ if(k==='tb'){let d=0,c=0;const R=S.accounts.map(a=>{const n=bal(a.code),x=n>0?n:0,y=n<0?-n:0;d+=x;c+=y;return `<tr><td>${esc(a.code+' '+a.name)}</td><td class="n">${x?fmt(x):''}</td><td class="n">${y?fmt(y):''}</td></tr>`}).join('');b=`<table><tr><th>Account</th><th class="n">Debit</th><th class="n">Credit</th></tr>${R}<tr class="t"><td>Total</td><td class="n">${fmt(d)}</td><td class="n">${fmt(c)}</td></tr></table>`}
+ else if(k==='pl'){const i=sum('income'),e=sum('expense');b=`<table>${h('Income')}${sec('income')}${tr('Total Income',i)}${h('Expenses')}${sec('expense')}${tr('Total Expenses',e)}${tr('Net Profit',i-e,i-e>=0?'pos':'neg')}</table>`}
+ else{const p=sum('income')-sum('expense'),a=sum('asset'),l=sum('liability'),q_=sum('equity')+p;b=`<table>${h('Assets')}${sec('asset')}${tr('Total Assets',a)}${h('Liabilities')}${sec('liability')}${tr('Total Liabilities',l)}${h('Equity')}${sec('equity')}<tr><td>Current Year Earnings</td><td class="n">${fmt(p)}</td></tr>${tr('Total Equity',q_)}${tr('Liabilities + Equity',l+q_,Math.abs(a-l-q_)<.005?'pos':'neg')}</table>`}
+ $('main').innerHTML=`<main><div class="sheet">${b}</div></main>`;
+}
+init();render();
+</script></body></html>
